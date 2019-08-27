@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Super Administrador 9000</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <!-- NavBar -->
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-3">
+            <a class="navbar-brand" href="#" routerLink="/">Super Administrador 9000</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink="/form">Cadastrar Entradas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink="/list">Estacionamento</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <!-- Binding Event -->
+                <input (keyup)="valorBusca = $event.target.value" class="form-control mr-sm-2" type="search" placeholder="Buscar Vaga(s)" aria-label="Search">
+                <!-- Call Event -->
+                <button (click)="msgNoConsole()" class="btn btn-light btn-outline-dark my-2 my-sm-0" type="button">Buscar</button>
+              </form>
+              
+              
+            </div>
+          </nav>
+        </header>
+        <!-- #/NavBar -->
+
+        <!-- Conteúdo -->
+        <div class="offset-1 mt-3 mb-3 justify-content-center">
+          {{ valorBusca }}
+          <router-outlet></router-outlet>
+        </div>
+        <!-- #/Conteúdo -->
+    </div>
+  </body>
+</html>

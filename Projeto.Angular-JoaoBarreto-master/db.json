@@ -1,0 +1,39 @@
+{
+  "dicionario": [
+    {
+      "palavra": "32446547",
+      "sinonimo": "SPD-3337",
+      "antonimo": "22",
+      "significado": "R$ 15,00",
+      "id": 1
+    },
+    {
+      "palavra": "6764567",
+      "sinonimo": "UTP-7776",
+      "antonimo": "11",
+      "significado": "R$ 2,00",
+      "id": 2
+    },
+    {
+      "palavra": "5554537",
+      "sinonimo": "ATA-21212",
+      "antonimo": "2",
+      "significado": "R$ 10,00",
+      "id": 3
+    },
+    {
+      "palavra": "24567876",
+      "sinonimo": "IOP-1212",
+      "antonimo": "13",
+      "significado": "R$ 20,00",
+      "id": 4
+    },
+    {
+      "palavra": "21321456",
+      "sinonimo": "YUT-2345",
+      "antonimo": "15",
+      "significado": "R$ 10,00",
+      "id": 5
+    }
+  ]
+}

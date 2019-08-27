@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="card-deck mb-3 text-center">
+        <!-- inbound property -->
+        <app-dicionario 
+            *ngFor="let d of dicionario"           
+            [palavra]="d.palavra"
+            [sinonimo]="d.sinonimo"
+            [antonimo]="d.antonimo" 
+            [significado]="d.significado">
+        </app-dicionario>
+    </div>
+</div>

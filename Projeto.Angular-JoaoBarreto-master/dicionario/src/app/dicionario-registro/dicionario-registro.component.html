@@ -1,0 +1,31 @@
+<div class="col-6 offset-2">
+    <fieldset>
+      <legend>Cadastro de Palavras</legend>
+      <form [formGroup]="dicForm" (submit)="addPalavra()">
+        <div class="form-group">
+          <label for="idPalavra">N# Ticket</label>
+          <input formControlName="palavra" id="idPalavra" type="text" class="form-control" placeholder="Informe a Palavra">
+          <small *ngIf="dicForm.get('palavra').errors?.required" class="text-danger d-block mt-2">Informe o número do ticket</small>
+        </div>
+        <div class="form-group">
+          <label for="idSinonimo">Placa</label>
+          <input formControlName="sinonimo" id="idSinonimo" type="text" class="form-control" placeholder="Informe o Sinônimo">
+          <small *ngIf="dicForm.get('sinonimo').errors?.required" class="text-danger d-block mt-2">Informe a Placa do veículo</small>
+        </div>
+        <div class="form-group">
+        <label for="idAntonimo">Vaga</label>
+        <input formControlName="antonimo" id="idAntonimo" type="text" class="form-control" placeholder="Informe o Sinônimo">
+        <small *ngIf="dicForm.get('antonimo').errors?.required" class="text-danger d-block mt-2">Informe a vaga em que o carro estará</small>
+      </div>
+        <div class="form-group">
+          <label for="idSignificado">Valor Cobrado</label>
+          <input formControlName="significado" id="idSignificado" type="text" class="form-control" placeholder="Informe o Significado">
+          <small *ngIf="dicForm.get('significado').errors?.required" class="text-danger d-block mt-2">Informe o valor cobrado</small>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-danger">Enviar</button>
+        </div>
+      
+      </form>
+    </fieldset>
+  </div>
